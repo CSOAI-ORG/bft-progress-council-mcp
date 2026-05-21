@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bft-progress-council-mcp"
-version = "1.0.0"
+version = "1.1.0"
 description = "BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
