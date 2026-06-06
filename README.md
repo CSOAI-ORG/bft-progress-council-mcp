@@ -1,4 +1,7 @@
 # Bft Progress Council MCP
+mcp-name: io.github.CSOAI-ORG/bft-progress-council-mcp
+
+# BFT Progress Council MCP
 
 [![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
 [![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
@@ -76,3 +79,97 @@ MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 <p align="center">
   <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
 </p>
+- **Prompt Injection Firewall** → `uvx agent-prompt-injection-firewall-mcp`
+- **Audit Logger** → `uvx agent-audit-logger-mcp`
+- **Policy Enforcement** → `uvx agent-policy-enforcement-mcp`
+- **Rate Limiter** → `uvx agent-rate-limiter-mcp`
+- **Certified Handoff** → `uvx agent-handoff-certified-mcp`
+- **Identity + Trust** → `uvx agent-identity-trust-mcp`
+
+Full catalogue + Anthropic Registry verify links: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+
+## Protocol coverage + Universal PAYG
+
+- ✅ **MCP** (Anthropic) — native
+- ✅ **A2A** (Google + Linux Foundation, absorbed IBM ACP)
+- ✅ **IBM ACP** — covered via A2A merge
+- ◐ **Stripe ACP** (Agentic Commerce) — Q3 bridge
+- ◐ **AP2** (Google Agent Payments) — partial
+- ◐ **x402** (Coinbase HTTP 402) — via api.meok.ai gateway
+- → **OASF / AGNTCY** — Q3 bridge
+
+| Option | Price | Best for |
+|---|---|---|
+| Self-host (this MCP) | £0 — MIT | Devs |
+| This MCP Starter | £29/mo | One-MCP teams |
+| Universal PAYG | £29/mo + £0.0002/call | Spiky usage |
+| A2A Substrate | £499/mo | A whole pack |
+| Universe | £1,499/mo | All 48 MCPs |
+
+## Why this matters for MEOK
+
+Every other MEOK MCP makes you *do* something. This one tells you *when to
+stop*. It's the cheapest insurance policy in the catalogue — and it sits
+alongside the agent-rate-limiter and agent-audit-logger as the third
+guardrail in the A2A Substrate.
+
+## Wire it up — full stack
+
+This MCP is **step 1 of 6** in the MEOK chain that turns one agent action
+into a fully signed compliance event. See
+[meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the 6-MCP chain:
+
+1. **bft-progress-council-mcp** (this) — anti-loop guardrail
+2. **agent-token-budget-mcp** — hard spend cap
+3. **agent-content-watermark-mcp** — EU AI Act Article 50(2) watermark
+4. **meok-eu-aigc-icon-mcp** — EU Code-of-Practice icon (Nov 2026 cliff)
+5. **agent-audit-logger-mcp** — hash-chained audit trail
+6. **a2a-governance-bridge-mcp** — fold all signatures into one signed event
+
+Output: ONE auditor-defensible evidence event mapped to EU AI Act Articles
+12 + 50, DORA Article 17, ISO 42001 clause 9 — plus a public verify URL.
+
+## Licence
+
+MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House
+16939677). Founder: [Nicholas Templeman](mailto:nicholas@meok.ai).
+
+<!-- BUY-LADDER:START -->
+
+## 💸 Try MEOK in 30 seconds — instant buy ladder
+
+| Tier | Price | What you get | Stripe |
+|---|---|---|---|
+| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
+| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
+| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+
+> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
+> Verify any signed report at <https://meok.ai/verify>.
+
+<!-- BUY-LADDER:END -->
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "bft-progress-council-mcp": {
+      "command": "uvx",
+      "args": ["bft-progress-council-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install bft-progress-council-mcp` then run the `bft-progress-council-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `start_session` to …"
+- "Use `record_action` to …"
+- "Use `council_vote` to …"

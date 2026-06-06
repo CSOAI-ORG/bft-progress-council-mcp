@@ -1,33 +1,22 @@
-# Bft Progress Council MCP
+# bft-progress-council-mcp
 
-> BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is...
+> BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is happening. Stops tokens bleeding on infinite spins. By MEOK AI Labs.
 
-`bft-progress-council-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- start_session
+- record_action
+- council_vote
+- get_session_summary
+- estimate_tokens_saved
+- list_voters
 
 ## Install
-
-```bash
+```
 pip install bft-progress-council-mcp
 ```
 
-Or run without installing:
-
-```bash
-uvx bft-progress-council-mcp
-```
-
-## Tools
-
-- `start_session`
-- `record_action`
-- `council_vote`
-- `get_session_summary`
-- `estimate_tokens_saved`
-- `list_voters` — List the 5 council voters and what each detects.
-
 ## Links
-
-- Source: https://github.com/CSOAI-ORG/bft-progress-council-mcp
 - PyPI: https://pypi.org/project/bft-progress-council-mcp/
-- MEOK AI Labs: https://meok.ai
-- Council of AI: https://councilof.ai
+- Docs: https://meok.ai
