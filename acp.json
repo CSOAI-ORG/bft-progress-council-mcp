@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "bft-progress-council-mcp",
+    "description": "BFT Progress Council MCP \u2014 5-voter Byzantine council halts agentic loops when no real progress is",
+    "version": "1.1.3",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "bft-progress-council-mcp"
+      }
+    ],
+    "capabilities": [
+      "start_session",
+      "record_action",
+      "council_vote",
+      "get_session_summary",
+      "estimate_tokens_saved",
+      "list_voters"
+    ]
+  }
+}
