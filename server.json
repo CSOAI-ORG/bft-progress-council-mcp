@@ -2,10 +2,11 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/bft-progress-council-mcp",
   "version": "1.1.7",
-  "description": "BFT Progress Council MCP — 5-voter Byzantine council halts agentic loops when no real progress is",
+  "description": "BFT Progress Council MCP \u2014 5-voter Byzantine council halts agentic loops when no real progress is",
   "repository": {
     "url": "https://github.com/CSOAI-ORG/bft-progress-council-mcp",
-    "source": "github"
+    "source": "github",
+    "id": "1245538546"
   },
   "packages": [
     {
